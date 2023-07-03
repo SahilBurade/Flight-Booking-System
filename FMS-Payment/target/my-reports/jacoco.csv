@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+FlightSearch,com.flightsearch.controller,SearchController,23,7,0,0,4,2,4,2,4,2
+FlightSearch,com.flightsearch,FlightSearchApplication,5,3,0,0,2,1,1,1,1,1
+FlightSearch,com.flightsearch.models,Flight,55,24,0,0,25,9,16,1,16,1
+FlightSearch,com.flightsearch.service,FlightSearchServiceImpl,68,3,2,0,10,1,6,1,5,1
