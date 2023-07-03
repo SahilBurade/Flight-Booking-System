@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Flight.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">FlightSearch</a> &gt; <a href="index.source.html" class="el_package">com.flightsearch.models</a> &gt; <span class="el_source">Flight.java</span></div><h1>Flight.java</h1><pre class="source lang-java linenums">package com.flightsearch.models;
+
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = &quot;flights&quot;)
+public class Flight {
+	@Id
+	private int id;
+	private String departure_location;
+	private String arrival_location;
+	private String airline;
+	private int flight_number;
+	private String departure_time;
+	private String arrival_time;
+	public int getId() {
+<span class="nc" id="L18">		return id;</span>
+	}
+	public void setId(int id) {
+<span class="nc" id="L21">		this.id = id;</span>
+<span class="nc" id="L22">	}</span>
+	public String getDeparture_location() {
+<span class="nc" id="L24">		return departure_location;</span>
+	}
+	public void setDeparture_location(String departure_location) {
+<span class="nc" id="L27">		this.departure_location = departure_location;</span>
+<span class="nc" id="L28">	}</span>
+	public String getArrival_location() {
+<span class="nc" id="L30">		return arrival_location;</span>
+	}
+	public void setArrival_location(String arrival_location) {
+<span class="nc" id="L33">		this.arrival_location = arrival_location;</span>
+<span class="nc" id="L34">	}</span>
+	public String getAirline() {
+<span class="nc" id="L36">		return airline;</span>
+	}
+	public void setAirline(String airline) {
+<span class="nc" id="L39">		this.airline = airline;</span>
+<span class="nc" id="L40">	}</span>
+	public int getFlight_number() {
+<span class="nc" id="L42">		return flight_number;</span>
+	}
+	public void setFlight_number(int flight_number) {
+<span class="nc" id="L45">		this.flight_number = flight_number;</span>
+<span class="nc" id="L46">	}</span>
+	public String getDeparture_time() {
+<span class="nc" id="L48">		return departure_time;</span>
+	}
+	public void setDeparture_time(String departure_time) {
+<span class="nc" id="L51">		this.departure_time = departure_time;</span>
+<span class="nc" id="L52">	}</span>
+	public String getArrival_time() {
+<span class="nc" id="L54">		return arrival_time;</span>
+	}
+	public void setArrival_time(String arrival_time) {
+<span class="nc" id="L57">		this.arrival_time = arrival_time;</span>
+<span class="nc" id="L58">	}</span>
+	public Flight() {
+<span class="nc" id="L60">		super();</span>
+		// TODO Auto-generated constructor stub
+<span class="nc" id="L62">	}</span>
+	public Flight(int id, String departure_location, String arrival_location, String airline, int flight_number,
+			String departure_time, String arrival_time) {
+<span class="fc" id="L65">		super();</span>
+<span class="fc" id="L66">		this.id = id;</span>
+<span class="fc" id="L67">		this.departure_location = departure_location;</span>
+<span class="fc" id="L68">		this.arrival_location = arrival_location;</span>
+<span class="fc" id="L69">		this.airline = airline;</span>
+<span class="fc" id="L70">		this.flight_number = flight_number;</span>
+<span class="fc" id="L71">		this.departure_time = departure_time;</span>
+<span class="fc" id="L72">		this.arrival_time = arrival_time;</span>
+<span class="fc" id="L73">	}</span>
+<span class="nc" id="L74">	public Flight(int id2, String departureLocation, String arrivalLocation) {</span>
+		// TODO Auto-generated constructor stub
+<span class="nc" id="L76">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
